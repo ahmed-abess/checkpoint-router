@@ -19,7 +19,7 @@ const  FilmCrad=(props)=> {
  const {Films}=props
         const FilmList= Films ?(
                 Films.map(el=>{
-                   return <FilmItem Film={el}/>
+                   return <FilmItem Film={el} key={el.id}/>
 
                 })
 

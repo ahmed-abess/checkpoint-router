@@ -1,14 +1,7 @@
-import axios from 'axios'
-const apiKey= 'd40e01a4ff994c515b03441dc33b1c21'
 
 
- export  const getMovies= () => {
-        const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
-        axios.get(url).then(data=>{return data})
 
-    };
-
- export const film =[
+ export  const film =[
         {
             popularity: 1413.62,
             vote_count: 346,
@@ -27,7 +20,8 @@ const apiKey= 'd40e01a4ff994c515b03441dc33b1c21'
             title: "2067",
             vote_average: 4.7,
             overview: "A lowly utility worker is called to the future by a mysterious radio signal, he must leave his dying wife to embark on a journey that will force him to face his deepest fears in an attempt to change the fabric of reality and save humankind from its greatest environmental crisis yet.",
-            release_date: "2020-10-01"
+            release_date: "2020-10-01",
+            trailer:"https://www.youtube.com/watch?v=vz-gdEL_ae8"
         },
         {
             popularity: 1246.497,
@@ -46,7 +40,8 @@ const apiKey= 'd40e01a4ff994c515b03441dc33b1c21'
             title: "Hard Kill",
             vote_average: 5,
             overview: "The work of billionaire tech CEO Donovan Chalmers is so valuable that he hires mercenaries to protect it, and a terrorist group kidnaps his daughter just to get it.",
-            release_date: "2020-10-23"
+            release_date: "2020-10-23",
+            trailer:"https://www.youtube.com/watch?v=vz-gdEL_ae8"
         },
         {
             popularity: 1273.047,
@@ -68,7 +63,8 @@ const apiKey= 'd40e01a4ff994c515b03441dc33b1c21'
             title: "The SpongeBob Movie: Sponge on the Run",
             vote_average: 8.1,
             overview: "When his best friend Gary is suddenly snatched away, SpongeBob takes Patrick on a madcap mission far beyond Bikini Bottom to save their pink-shelled pal.",
-            release_date: "2020-08-14"
+            release_date: "2020-08-14",
+            trailer:"https://www.youtube.com/watch?v=vz-gdEL_ae8"
         },
         {
             popularity: 1060.741,
@@ -89,7 +85,8 @@ const apiKey= 'd40e01a4ff994c515b03441dc33b1c21'
             title: "Rogue City",
             vote_average: 5.9,
             overview: "Caught in the crosshairs of police corruption and Marseille’s warring gangs, a loyal cop must protect his squad by taking matters into his own hands.",
-            release_date: "2020-10-30"
+            release_date: "2020-10-30",
+            trailer:"https://www.youtube.com/watch?v=vz-gdEL_ae8"
         },
 
         {
@@ -109,7 +106,8 @@ const apiKey= 'd40e01a4ff994c515b03441dc33b1c21'
             title: "Greenland",
             vote_average: 7.1,
             overview: "John Garrity, his estranged wife and their young son embark on a perilous journey to find sanctuary as a planet-killing comet hurtles toward Earth. Amid terrifying accounts of cities getting levelled, the Garrity's experience the best and worst in humanity. As the countdown to the global apocalypse approaches zero, their incredible trek culminates in a desperate and last-minute flight to a possible safe haven.",
-            release_date: "2020-07-29"
+            release_date: "2020-07-29",
+            trailer:"https://www.youtube.com/watch?v=vz-gdEL_ae8"
         },
         {
             popularity: 1095.491,
@@ -131,7 +129,8 @@ const apiKey= 'd40e01a4ff994c515b03441dc33b1c21'
             title: "Roald Dahl's The Witches",
             vote_average: 6.9,
             overview: "In late 1967, a young orphaned boy goes to live with his loving grandma in the rural Alabama town of Demopolis. As the boy and his grandmother encounter some deceptively glamorous but thoroughly diabolical witches, she wisely whisks him away to a seaside resort. Regrettably, they arrive at precisely the same time that the world's Grand High Witch has gathered.",
-            release_date: "2020-10-26"
+            release_date: "2020-10-26",
+            trailer:"https://www.youtube.com/watch?v=vz-gdEL_ae8"
         },
 
         {
@@ -153,7 +152,8 @@ const apiKey= 'd40e01a4ff994c515b03441dc33b1c21'
             title: "Welcome to Sudden Death",
             vote_average: 6.4,
             overview: "Jesse Freeman is a former special forces officer and explosives expert now working a regular job as a security guard in a state-of-the-art basketball arena. Trouble erupts when a tech-savvy cadre of terrorists kidnap the team's owner and Jesse's daughter during opening night. Facing a ticking clock and impossible odds, it's up to Jesse to not only save them but also a full house of fans in this highly charged action thriller.",
-            release_date: "2020-09-29"
+            release_date: "2020-09-29",
+            trailer:"https://www.youtube.com/watch?v=vz-gdEL_ae8"
         },
         {
             popularity: 725.668,
@@ -171,7 +171,8 @@ const apiKey= 'd40e01a4ff994c515b03441dc33b1c21'
             title: "Come Play",
             vote_average: 6.6,
             overview: "A lonely young boy feels different from everyone else. Desperate for a friend, he seeks solace and refuge in his ever-present cell phone and tablet. When a mysterious creature uses the boy’s devices against him to break into our world, his parents must fight to save their son from the monster beyond the screen.",
-            release_date: "2020-10-28"
+            release_date: "2020-10-28",
+            trailer:"https://www.youtube.com/watch?v=vz-gdEL_ae8"
         },
     ];
 export default function getImage (name) {

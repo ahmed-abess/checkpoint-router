@@ -7,6 +7,8 @@ import FilmCrad from "./component/FilmCrad";
  import Container from "@material-ui/core/Container";
  import NavBar from './component/navBar'
 import NewMovie from "./component/NewMovie";
+ import {BrowserRouter as Router ,Switch,Route} from 'react-router-dom'
+import Film from './component/Film'
 
 
 
@@ -43,8 +45,18 @@ function App (){
 
             <Container  maxWidth="md">
                 <NavBar Search={Search}/>
-                <NewMovie addMovie={addMovie}/>
-                <FilmCrad Films={films}/>
+               <Router>
+                   <Switch>
+                       <Route path="/" exact >
+                           <NewMovie addMovie={addMovie}/>
+                           <FilmCrad Films={films}/>
+                       </Route>
+                       <Route path="/:id"  >
+                           <Film/>
+
+                       </Route>
+                   </Switch>
+               </Router>
             </Container>
 
 

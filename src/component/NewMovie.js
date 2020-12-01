@@ -31,7 +31,8 @@ const useStyles = makeStyles((theme) => ({
 
     button :{
         float:  'right',
-        marginTop :'10px'
+        marginTop :'10px',
+        margin: '20px'
     },
     form:{
         '& .MuiTextField-root': {
@@ -99,7 +100,8 @@ export default function NewMovie(props) {
                 title: title,
                 vote_average: vote,
                 overview: Overview,
-                release_date: "2020-10-01"
+                release_date: "2020-10-01",
+                trailer:"https://www.youtube.com/watch?v=vz-gdEL_ae8"
             }]
         addMovie(newMovie)
     }
@@ -128,8 +130,6 @@ export default function NewMovie(props) {
 
     return (
         <div>
-
-
             <Fab color="primary" aria-label="add" className={classes.button}  onClick={handleOpen}>
                <AddBox/>
             </Fab>
