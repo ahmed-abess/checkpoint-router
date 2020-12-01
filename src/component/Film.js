@@ -1,13 +1,13 @@
 import React from 'react'
 import {Link,useParams} from'react-router-dom'
 import getImage, {film} from'../Api/TMDB'
-import {Grid} from "@material-ui/core";
+import {Button, Grid} from "@material-ui/core";
 import {makeStyles} from '@material-ui/core/styles'
 import {  deepPurple } from '@material-ui/core/colors';
 import {Avatar} from "@material-ui/core";
 import Paper from '@material-ui/core/Paper';
 import { Typography } from '@material-ui/core';
-import {CardMedia} from "@material-ui/core";
+import {Home} from "@material-ui/icons";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -44,7 +44,14 @@ function Film() {
 
     const classes = useStyles();
     return(
+
+
         <Grid container spacing={1} className={classes.root}>
+            <Grid container>
+                <Link to={'/'}>
+                <Button variant="outlined" ><Home color="primary"  /></Button>
+            </Link>
+            </Grid>
             <Grid item xs={12}>
                 <Paper className={classes.paper}>
 

@@ -111,7 +111,7 @@ const {Film}=props
                         <ShareIcon />
                     </IconButton>
                    <Link to={'/'+Film.id}>
-                       <Button variant="contained" color='primary' className={classes.rounded}> <SendRoundedIcon/></Button>
+                       <Button variant="outlined" color='primary' > <SendRoundedIcon/></Button>
                    </Link>
                 </CardActions>
 
